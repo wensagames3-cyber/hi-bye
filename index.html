@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Funny Site</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+      font-size: 80px;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.4s;
+      background: #b6ffb6;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text">hi</div>
+
+<script>
+  const text = document.getElementById("text");
+  let state = 0;
+
+  document.body.addEventListener("click", () => {
+    if (state === 0) {
+      text.textContent = "bye";
+      document.body.style.background = "#fff6a6";
+      state = 1;
+    }
+  });
+</script>
+
+</body>
+</html>
+
